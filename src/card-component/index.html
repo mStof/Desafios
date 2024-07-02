@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Product preview card component</title>
+  <style> 
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body class="bg-white-200 flex items-center justify-center h-screen">
+
+  <main class="max-w-[37.5rem] w-11/12 bg-white-100 font-sans font-normal text-gray rounded-lg overflow-hidden sm:flex">
+    <img src="images/image-product-desktop.jpg" alt="Product image" class="w-full h-[240px] object-cover sm:h-auto sm:w-[240px]" >
+    <article class="px-6 py-4">
+      <h2 class="text-xs tracking-[5px]">PERFUME</h2>
+      <h1 class="sm:max-w-52 text-balance font-serif font-bold text-dark-blue text-big leading-none mb-4 mt-3">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-sm mb-5 leading-relaxed">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="flex items-center gap-5 mb-4">
+        <strong class="font-serif text-big text-green-100 ">$149.99</strong>
+        <span class="text-xs">$169.99</span>
+      </div>
+      <button class="text-sm bg-green-100 text-white-100 flex gap-3 w-full items-center justify-center py-3 rounded-lg active:bg-green-200 active:font-bold transition-all duration-150">
+        <img src="images/icon-cart.svg" alt="Cart icon">
+        Add to Cart
+      </button>
+    </article>
+  </main>
+
+  <script src="tailwind.config.js"></script>
+</body>
+</html>
